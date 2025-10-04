@@ -29,6 +29,11 @@
     />
     <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
 
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="assets/hero-poster.webp" />
+    <link rel="preload" as="image" href="assets/branding/logo_horizontal.webp" />
+    <link rel="preload" as="image" href="assets/branding/logo_small.webp" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -72,6 +77,7 @@
           muted
           loop
           playsinline
+          preload="none"
           poster="assets/hero-poster.webp"
         >
           <source src="assets/dewbox-hero.mp4" type="video/mp4" />
@@ -190,32 +196,33 @@
         <p class="section-subtitle">Вдъхновение от предишни DewBox кутии</p>
         <div class="gallery">
           <div class="gallery-item">
-            <img src="assets/sample1.webp" alt="DewBox пример 1" />
+            <img src="assets/sample1.webp" alt="DewBox пример 1" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample2.webp" alt="DewBox пример 2" />
+            <img src="assets/sample2.webp" alt="DewBox пример 2" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample3.webp" alt="DewBox пример 3" />
+            <img src="assets/sample3.webp" alt="DewBox пример 3" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample4.webp" alt="DewBox пример 4" />
+            <img src="assets/sample4.webp" alt="DewBox пример 4" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample5.webp" alt="DewBox пример 5" />
+            <img src="assets/sample5.webp" alt="DewBox пример 5" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample6.webp" alt="DewBox пример 6" />
+            <img src="assets/sample6.webp" alt="DewBox пример 6" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample7.webp" alt="DewBox пример 7" />
+            <img src="assets/sample7.webp" alt="DewBox пример 7" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample8.webp" alt="DewBox пример 8" />
+            <img src="assets/sample8.webp" alt="DewBox пример 8" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample9.webp" alt="DewBox пример 9" />
+            <img src="assets/sample9.webp" alt="DewBox пример 9" loading="lazy" />
           </div>
+        </div>
       </section>
 
       <section id="contact" class="contact">
@@ -296,6 +303,7 @@
           muted
           loop
           playsinline
+          preload="none"
           poster="assets/hero-poster.webp"
         >
           <source src="assets/dewbox-hero.mp4" type="video/mp4" />
@@ -411,35 +419,35 @@
         </p>
         <div class="gallery">
           <div class="gallery-item">
-            <img src="assets/sample1.webp" alt="DewBox example 1" />
+            <img src="assets/sample1.webp" alt="DewBox example 1" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample2.webp" alt="DewBox example 2" />
+            <img src="assets/sample2.webp" alt="DewBox example 2" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample3.webp" alt="DewBox example 3" />
+            <img src="assets/sample3.webp" alt="DewBox example 3" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample4.webp" alt="DewBox example 4" />
+            <img src="assets/sample4.webp" alt="DewBox example 4" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample5.webp" alt="DewBox example 5" />
+            <img src="assets/sample5.webp" alt="DewBox example 5" loading="lazy" />
             <div class="gallery-item-caption">DewBox example 5</div>
           </div>
           <div class="gallery-item">
-            <img src="assets/sample6.webp" alt="DewBox example 6" />
+            <img src="assets/sample6.webp" alt="DewBox example 6" loading="lazy" />
             <div class="gallery-item-caption">DewBox example 6</div>
           </div>
           <div class="gallery-item">
-            <img src="assets/sample7.webp" alt="DewBox example 7" />
+            <img src="assets/sample7.webp" alt="DewBox example 7" loading="lazy" />
             <div class="gallery-item-caption">DewBox example 7</div>
           </div>
           <div class="gallery-item">
-            <img src="assets/sample8.webp" alt="DewBox example 8" />
+            <img src="assets/sample8.webp" alt="DewBox example 8" loading="lazy" />
             <div class="gallery-item-caption">DewBox example 8</div>
           </div>
           <div class="gallery-item">
-            <img src="assets/sample9.webp" alt="DewBox example 9" />
+            <img src="assets/sample9.webp" alt="DewBox example 9" loading="lazy" />
             <div class="gallery-item-caption">DewBox example 9</div>
           </div>
         </div>
@@ -561,7 +569,7 @@
           navLinks[0].textContent = "За DewBox";
           navLinks[1].textContent = "Как работи";
           navLinks[2].textContent = "Цена";
-          navLinks[3].textContent = "Въпроси";
+          navLinks[3].textContent = "FAQ";
           navLinks[4].textContent = "Галерия";
         }
       }
