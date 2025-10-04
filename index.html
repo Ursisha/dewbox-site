@@ -1,261 +1,674 @@
 <!DOCTYPE html>
 <html lang="bg">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DewBox by Ursisha - Персонализирани Мистериозни Кутии</title>
-    <meta name="description" content="DewBox е персонализирана мистериозна кутия, създадена специално за теб от Ursisha.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="DewBox е персонализирана мистериозна кутия, създадена специално за теб от Ursisha."
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/icons/favicon-android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/icons/favicon-android-chrome-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/favicon-apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="#" class="logo">Ursisha</a>
-            <ul class="nav-links">
-                <li><a href="#about" class="nav-link-bg">За DewBox</a></li>
-                <li><a href="#how" class="nav-link-bg">Как работи</a></li>
-                <li><a href="#price" class="nav-link-bg">Цена</a></li>
-                <li><a href="#faq" class="nav-link-bg">Въпроси</a></li>
-                <li><a href="#gallery" class="nav-link-bg">Галерия</a></li>
-            </ul>
-            <button class="lang-switch" onclick="toggleLanguage()">EN</button>
-        </nav>
+      <nav>
+        <a href="#" class="logo">
+          <img
+            src="assets/branding/logo_horizontal.webp"
+            alt="Ursisha Logo"
+            class="logo-img logo-desktop"
+          />
+          <img
+            src="assets/branding/logo_small.webp"
+            alt="Ursisha Logo"
+            class="logo-img logo-mobile"
+          />
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link-bg">За DewBox</a></li>
+          <li><a href="#how" class="nav-link-bg">Как работи</a></li>
+          <li><a href="#price" class="nav-link-bg">Цена</a></li>
+          <li><a href="#faq" class="nav-link-bg">Въпроси</a></li>
+          <li><a href="#gallery" class="nav-link-bg">Галерия</a></li>
+        </ul>
+        <button class="lang-switch" onclick="toggleLanguage()">EN</button>
+      </nav>
     </header>
 
     <!-- Bulgarian Content -->
     <div id="bg-content" class="lang-content active">
-        <section class="hero">
-            <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
-                <source src="assets/dewbox-hero.mp4" type="video/mp4">
-            </video>
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1>DewBox by Ursisha</h1>
-                <p class="hero-subtitle">Персонализирана мистериозна кутия – създадена специално за теб</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4RmO6APw6d88s1cgk26RI1ptLKJVvBPgyv-P5FHh6_43rCA/viewform" target="_blank" class="cta-button">Попълни въпросника</a>
-            </div>
-        </section>
+      <section class="hero">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/hero-poster.webp"
+        >
+          <source src="assets/dewbox-hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>DewBox by Ursisha</h1>
+          <p class="hero-subtitle">
+            Персонализирана мистериозна кутия – създадена специално за теб
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe4RmO6APw6d88s1cgk26RI1ptLKJVvBPgyv-P5FHh6_43rCA/viewform"
+            target="_blank"
+            class="cta-button"
+            >Попълни въпросника</a
+          >
+        </div>
+      </section>
 
-        <section id="about" class="about">
-            <h2 class="section-title">🌌 Какво е DewBox?</h2>
-            <p>DewBox е персонализирана мистериозна кутия – всяка различна, интересна и напълно съобразена с твоя вкус, стил и предпочитания.
-Вътре може да откриеш бижута, книги, аромати, малки ритуали за радост – изненади, които ще те усмихнат и ще превърнат деня ти във вълнуваща история за разказване.</p>
-        </section>
+      <section id="about" class="about">
+        <h2 class="section-title">🌌 Какво е DewBox?</h2>
+        <p>
+          DewBox е персонализирана мистериозна кутия – всяка различна, интересна
+          и напълно съобразена с твоя вкус, стил и предпочитания. Вътре може да
+          откриеш бижута, книги, аромати, малки ритуали за радост – изненади,
+          които ще те усмихнат и ще превърнат деня ти във вълнуваща история за
+          разказване.
+        </p>
+      </section>
 
-        <section id="how">
-            <h2 class="section-title">🪄 Как работи?</h2>
-            <p class="section-subtitle">Три прости стъпки до твоята персонализирана изненада</p>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Попълни въпросник</h3>
-                    <p>Сподели своите предпочитания, стил и интереси чрез кратък въпросник</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Изработка и подбор</h3>
-                    <p>Ursisha изработва и подбира най-подходящите изненади специално за теб</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Получи кутията си</h3>
-                    <p>Получаваш уникална кутия-изненада, която е само твоя</p>
-                </div>
-            </div>
-        </section>
+      <section id="how">
+        <h2 class="section-title">🪄 Как работи?</h2>
+        <p class="section-subtitle">
+          Три прости стъпки до твоята персонализирана изненада
+        </p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Попълни въпросник</h3>
+            <p>
+              Сподели своите предпочитания, стил и интереси чрез кратък
+              въпросник
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Изработка и подбор</h3>
+            <p>
+              Ursisha изработва и подбира най-подходящите изненади специално за
+              теб
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Получи кутията си</h3>
+            <p>Получаваш уникална кутия-изненада, която е само твоя</p>
+          </div>
+        </div>
+      </section>
 
-        <section id="price">
-            <div class="price-box">
-                <h2>💝 Цена</h2>
-                <div class="price-amount">69 лв</div>
-                <p class="price-description">Доставката до автомати на BoxNow и Спиди е включена в цената</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4RmO6APw6d88s1cgk26RI1ptLKJVvBPgyv-P5FHh6_43rCA/viewform" target="_blank" class="cta-button" style="background: white; color: var(--primary-color); margin-top: 2rem;">Поръчай сега</a>
-            </div>
-        </section>
+      <section id="price">
+        <div class="price-box">
+          <h2>💝 Цена</h2>
+          <div class="price-amount">69 лв</div>
+          <p class="price-description">
+            Доставката до автомати на BoxNow и Спиди е включена в цената
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe4RmO6APw6d88s1cgk26RI1ptLKJVvBPgyv-P5FHh6_43rCA/viewform"
+            target="_blank"
+            class="cta-button"
+            style="
+              background: white;
+              color: var(--primary-color);
+              margin-top: 2rem;
+            "
+            >Поръчай сега</a
+          >
+        </div>
+      </section>
 
-        <section id="faq">
-            <h2 class="section-title">❓ Често задавани въпроси</h2>
-            <div class="faq-item">
-                <h3>Колко време отнема изработката?</h3>
-                <p>Обикновено 3–7 дни, в зависимост от наличността на материалите и персонализацията.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Мога ли да поръчам за подарък?</h3>
-                <p>Да, разбира се! Има опция за поръчка на ваучер, който може да подарите.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Какви са вариантите за доставка?</h3>
-                <p>До автомати на BoxNow и Спиди – безплатно (включено в цената).</p>
-            </div>
-            <div class="faq-item">
-                <h3>Как мога да заплатя кутията?</h3>
-                <p>Изработката започва след предварително заплащане по банков път или Revolut.</p>
-            </div>
-        </section>
+      <section id="faq">
+        <h2 class="section-title">❓ Често задавани въпроси</h2>
+        <div class="faq-item">
+          <h3>Колко време отнема изработката?</h3>
+          <p>
+            Обикновено 3–7 дни, в зависимост от наличността на материалите и
+            персонализацията.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Мога ли да поръчам за подарък?</h3>
+          <p>
+            Да, разбира се! Има опция за поръчка на ваучер, който може да
+            подарите.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Какви са вариантите за доставка?</h3>
+          <p>
+            До автомати на BoxNow и Спиди – безплатно (включено в цената).
+            Възможно е и лично предаване в рамките на град София.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Как мога да заплатя кутията?</h3>
+          <p>
+            Изработката започва след предварително заплащане по банков път или
+            Revolut.
+          </p>
+        </div>
+      </section>
 
-        <section id="gallery">
-            <h2 class="section-title">📷 Галерия</h2>
-            <p class="section-subtitle">Вдъхновение от предишни DewBox кутии</p>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="assets/sample1.jpg" alt="DewBox пример 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/sample2.jpg" alt="DewBox пример 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/sample3.jpg" alt="DewBox пример 3">
-                </div>
-            </div>
-        </section>
+      <section id="gallery">
+        <h2 class="section-title">📷 Галерия</h2>
+        <p class="section-subtitle">Вдъхновение от предишни DewBox кутии</p>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="assets/sample1.webp" alt="DewBox пример 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample2.webp" alt="DewBox пример 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample3.webp" alt="DewBox пример 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample4.webp" alt="DewBox пример 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample5.webp" alt="DewBox пример 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample6.webp" alt="DewBox пример 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample7.webp" alt="DewBox пример 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample8.webp" alt="DewBox пример 8" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample9.webp" alt="DewBox пример 9" />
+          </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="section-title">💬 Имаш въпроси?</h2>
+        <div class="contact-info">
+          <a
+            href="https://instagram.com/ursisha_"
+            target="_blank"
+            class="contact-item"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>@ursisha_</span>
+          </a>
+          <a
+            href="https://facebook.com/ursisha"
+            target="_blank"
+            class="contact-item"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              ></path>
+            </svg>
+            <span>Ursisha</span>
+          </a>
+          <a href="tel:+359888829538" class="contact-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path>
+            </svg>
+            <span>+359 888 829 538</span>
+          </a>
+        </div>
+      </section>
     </div>
 
     <!-- English Content -->
     <div id="en-content" class="lang-content">
-        <section class="hero">
-            <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
-                <source src="assets/dewbox-hero.mp4" type="video/mp4">
-            </video>
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1>DewBox by Ursisha</h1>
-                <p class="hero-subtitle">A personalized mystery box – created just for you</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4RmO6APw6d88s1cgk26RI1ptLKJVvBPgyv-P5FHh6_43rCA/viewform" target="_blank" class="cta-button">Fill the Questionnaire</a>
-            </div>
-        </section>
+      <section class="hero">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/hero-poster.webp"
+        >
+          <source src="assets/dewbox-hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>DewBox by Ursisha</h1>
+          <p class="hero-subtitle">
+            A personalized mystery box – created just for you
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe4RmO6APw6d88s1cgk26RI1ptLKJVvBPgyv-P5FHh6_43rCA/viewform"
+            target="_blank"
+            class="cta-button"
+            >Fill the Questionnaire</a
+          >
+        </div>
+      </section>
 
-        <section id="about" class="about">
-            <h2 class="section-title">🌌 What is DewBox?</h2>
-            <p>DewBox is a personalized mystery box – each one unique, created based on your taste, style, and preferences. Every box is a one-of-a-kind surprise, carefully crafted for you by Ursisha.</p>
-        </section>
+      <section id="about" class="about">
+        <h2 class="section-title">🌌 What is DewBox?</h2>
+        <p>
+          DewBox is a personalized mystery box – each one unique, created based
+          on your taste, style, and preferences. Every box is a one-of-a-kind
+          surprise, carefully crafted for you by Ursisha.
+        </p>
+      </section>
 
-        <section id="how">
-            <h2 class="section-title">🪄 How it works?</h2>
-            <p class="section-subtitle">Three simple steps to your personalized surprise</p>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Fill the Questionnaire</h3>
-                    <p>Share your preferences, style, and interests through a short questionnaire</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Creation & Selection</h3>
-                    <p>Ursisha carefully creates and selects the perfect surprises tailored for you</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Receive Your Box</h3>
-                    <p>You receive a unique surprise box made just for you</p>
-                </div>
-            </div>
-        </section>
+      <section id="how">
+        <h2 class="section-title">🪄 How it works?</h2>
+        <p class="section-subtitle">
+          Three simple steps to your personalized surprise
+        </p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Fill the Questionnaire</h3>
+            <p>
+              Share your preferences, style, and interests through a short
+              questionnaire
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Creation & Selection</h3>
+            <p>
+              Ursisha carefully creates and selects the perfect surprises
+              tailored for you
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Receive Your Box</h3>
+            <p>You receive a unique surprise box made just for you</p>
+          </div>
+        </div>
+      </section>
 
-        <section id="price">
-            <div class="price-box">
-                <h2>💝 Price</h2>
-                <div class="price-amount">69 BGN</div>
-                <p class="price-description">Delivery to BoxNow and Speedy lockers is included in the price</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4RmO6APw6d88s1cgk26RI1ptLKJVvBPgyv-P5FHh6_43rCA/viewform" target="_blank" class="cta-button" style="background: white; color: var(--primary-color); margin-top: 2rem;">Order Now</a>
-            </div>
-        </section>
+      <section id="price">
+        <div class="price-box">
+          <h2>💝 Price</h2>
+          <div class="price-amount">69 BGN</div>
+          <p class="price-description">
+            Delivery to BoxNow and Speedy lockers is included in the price
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe4RmO6APw6d88s1cgk26RI1ptLKJVvBPgyv-P5FHh6_43rCA/viewform"
+            target="_blank"
+            class="cta-button"
+            style="
+              background: white;
+              color: var(--primary-color);
+              margin-top: 2rem;
+            "
+            >Order Now</a
+          >
+        </div>
+      </section>
 
-        <section id="faq">
-            <h2 class="section-title">❓ FAQ</h2>
-            <div class="faq-item">
-                <h3>How long does it take to prepare my box?</h3>
-                <p>Usually 3–7 days, depending on material availability and personalization.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Can I order it as a gift?</h3>
-                <p>Yes, of course! There's an option to order a gift voucher.</p>
-            </div>
-            <div class="faq-item">
-                <h3>What delivery options are available?</h3>
-                <p>To BoxNow and Speedy lockers – free of charge (included in the price).</p>
-            </div>
-            <div class="faq-item">
-                <h3>How can I pay for the box?</h3>
-                <p>Preparation begins only after prepayment via bank transfer or Revolut.</p>
-            </div>
-        </section>
+      <section id="faq">
+        <h2 class="section-title">❓ FAQ</h2>
+        <div class="faq-item">
+          <h3>How long does it take to prepare my box?</h3>
+          <p>
+            Usually 3–7 days, depending on material availability and
+            personalization.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I order it as a gift?</h3>
+          <p>Yes, of course! There's an option to order a gift voucher.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What delivery options are available?</h3>
+          <p>
+            To BoxNow and Speedy lockers – free of charge (included in the
+            price).
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>How can I pay for the box?</h3>
+          <p>
+            Preparation begins only after prepayment via bank transfer or
+            Revolut.
+          </p>
+        </div>
+      </section>
 
-        <section id="gallery">
-            <h2 class="section-title">📷 Gallery</h2>
-            <p class="section-subtitle">Inspiration from previous DewBox creations</p>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="assets/sample1.jpg" alt="DewBox example 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/sample2.jpg" alt="DewBox example 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/sample3.jpg" alt="DewBox example 3">
-                </div>
-            </div>
-        </section>
+      <section id="gallery">
+        <h2 class="section-title">📷 Gallery</h2>
+        <p class="section-subtitle">
+          Inspiration from previous DewBox creations
+        </p>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="assets/sample1.webp" alt="DewBox example 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample2.webp" alt="DewBox example 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample3.webp" alt="DewBox example 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample4.webp" alt="DewBox example 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample5.webp" alt="DewBox example 5" />
+            <div class="gallery-item-caption">DewBox example 5</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample6.webp" alt="DewBox example 6" />
+            <div class="gallery-item-caption">DewBox example 6</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample7.webp" alt="DewBox example 7" />
+            <div class="gallery-item-caption">DewBox example 7</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample8.webp" alt="DewBox example 8" />
+            <div class="gallery-item-caption">DewBox example 8</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sample9.webp" alt="DewBox example 9" />
+            <div class="gallery-item-caption">DewBox example 9</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="section-title">💬 Get in Touch</h2>
+        <div class="contact-info">
+          <a
+            href="https://instagram.com/ursisha_"
+            target="_blank"
+            class="contact-item"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>@ursisha_</span>
+          </a>
+          <a
+            href="https://facebook.com/ursisha"
+            target="_blank"
+            class="contact-item"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              ></path>
+            </svg>
+            <span>Ursisha</span>
+          </a>
+          <a href="tel:+359888829538" class="contact-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path>
+            </svg>
+            <span>+359 888 829 538</span>
+          </a>
+        </div>
+      </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 Ursisha. All rights reserved.</p>
-        <p style="margin-top: 0.5rem; opacity: 0.7;">Made with ❤️ for personalized surprises</p>
+      <p>&copy; 2025 Ursisha. All rights reserved.</p>
+      <p style="margin-top: 0.5rem; opacity: 0.7">
+        Made with ❤️ for personalized surprises
+      </p>
     </footer>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+      <button class="lightbox-prev">&#10094;</button>
+      <button class="lightbox-next">&#10095;</button>
+    </div>
+
     <script>
-        let currentLang = 'bg';
+      let currentLang = "bg";
 
-        function toggleLanguage() {
-            const bgContent = document.getElementById('bg-content');
-            const enContent = document.getElementById('en-content');
-            const langButton = document.querySelector('.lang-switch');
-            const navLinks = document.querySelectorAll('.nav-link-bg');
+      function toggleLanguage() {
+        const bgContent = document.getElementById("bg-content");
+        const enContent = document.getElementById("en-content");
+        const langButton = document.querySelector(".lang-switch");
+        const navLinks = document.querySelectorAll(".nav-link-bg");
 
-            if (currentLang === 'bg') {
-                bgContent.classList.remove('active');
-                enContent.classList.add('active');
-                langButton.textContent = 'BG';
-                currentLang = 'en';
-                
-                // Update nav links text
-                navLinks[0].textContent = 'About DewBox';
-                navLinks[1].textContent = 'How it Works';
-                navLinks[2].textContent = 'Price';
-                navLinks[3].textContent = 'FAQ';
-                navLinks[4].textContent = 'Gallery';
-            } else {
-                enContent.classList.remove('active');
-                bgContent.classList.add('active');
-                langButton.textContent = 'EN';
-                currentLang = 'bg';
-                
-                // Update nav links text
-                navLinks[0].textContent = 'За DewBox';
-                navLinks[1].textContent = 'Как работи';
-                navLinks[2].textContent = 'Цена';
-                navLinks[3].textContent = 'Въпроси';
-                navLinks[4].textContent = 'Галерия';
-            }
+        if (currentLang === "bg") {
+          bgContent.classList.remove("active");
+          enContent.classList.add("active");
+          langButton.textContent = "BG";
+          currentLang = "en";
+
+          // Update nav links text
+          navLinks[0].textContent = "About DewBox";
+          navLinks[1].textContent = "How it Works";
+          navLinks[2].textContent = "Price";
+          navLinks[3].textContent = "FAQ";
+          navLinks[4].textContent = "Gallery";
+        } else {
+          enContent.classList.remove("active");
+          bgContent.classList.add("active");
+          langButton.textContent = "EN";
+          currentLang = "bg";
+
+          // Update nav links text
+          navLinks[0].textContent = "За DewBox";
+          navLinks[1].textContent = "Как работи";
+          navLinks[2].textContent = "Цена";
+          navLinks[3].textContent = "Въпроси";
+          navLinks[4].textContent = "Галерия";
         }
+      }
 
-        // Smooth scroll with offset for fixed header
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offset = 80;
-                    const targetPosition = target.offsetTop - offset;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
+      // Smooth scroll with offset for fixed header
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+
+          // Find the target section within the active language content
+          const activeContent = document.querySelector(".lang-content.active");
+          const target = activeContent
+            ? activeContent.querySelector(targetId)
+            : null;
+
+          if (target) {
+            const offset = 80;
+            const targetPosition = target.offsetTop - offset;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
             });
+          }
         });
+      });
+
+      // Lightbox functionality
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxCaption = document.getElementById("lightbox-caption");
+      const closeBtn = document.querySelector(".lightbox-close");
+      const prevBtn = document.querySelector(".lightbox-prev");
+      const nextBtn = document.querySelector(".lightbox-next");
+
+      let currentImageIndex = 0;
+      let galleryImages = [];
+
+      // Initialize gallery images
+      function updateGalleryImages() {
+        const activeContent = document.querySelector(".lang-content.active");
+        galleryImages = Array.from(
+          activeContent.querySelectorAll(".gallery-item img")
+        );
+      }
+
+      // Open lightbox
+      function openLightbox(index) {
+        updateGalleryImages();
+        currentImageIndex = index;
+        lightboxImg.src = galleryImages[currentImageIndex].src;
+        lightboxCaption.textContent = galleryImages[currentImageIndex].alt;
+        lightbox.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      // Close lightbox
+      function closeLightbox() {
+        lightbox.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // Navigate images
+      function changeImage(direction) {
+        currentImageIndex += direction;
+        if (currentImageIndex >= galleryImages.length) {
+          currentImageIndex = 0;
+        } else if (currentImageIndex < 0) {
+          currentImageIndex = galleryImages.length - 1;
+        }
+        lightboxImg.src = galleryImages[currentImageIndex].src;
+        lightboxCaption.textContent = galleryImages[currentImageIndex].alt;
+      }
+
+      // Event listeners for gallery items
+      document.addEventListener("click", function (e) {
+        if (e.target.closest(".gallery-item img")) {
+          const activeContent = document.querySelector(".lang-content.active");
+          const clickedImg = e.target;
+          const images = Array.from(
+            activeContent.querySelectorAll(".gallery-item img")
+          );
+          const index = images.indexOf(clickedImg);
+          openLightbox(index);
+        }
+      });
+
+      // Close lightbox events
+      closeBtn.addEventListener("click", closeLightbox);
+      lightbox.addEventListener("click", function (e) {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      // Navigation buttons
+      prevBtn.addEventListener("click", () => changeImage(-1));
+      nextBtn.addEventListener("click", () => changeImage(1));
+
+      // Keyboard navigation
+      document.addEventListener("keydown", function (e) {
+        if (lightbox.style.display === "flex") {
+          if (e.key === "Escape") closeLightbox();
+          if (e.key === "ArrowLeft") changeImage(-1);
+          if (e.key === "ArrowRight") changeImage(1);
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
