@@ -349,6 +349,59 @@ section {
   transform: scale(1.1);
 }
 
+/* Contact Section */
+.contact {
+  background: white;
+  border-radius: 20px;
+  padding: 4rem;
+  margin: 3rem auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: var(--light-bg);
+  border-radius: 15px;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: all 0.3s;
+  min-width: 200px;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: var(--secondary-color);
+  color: white;
+}
+
+.contact-item svg {
+  color: var(--secondary-color);
+  transition: color 0.3s;
+}
+
+.contact-item:hover svg {
+  color: white;
+}
+
+.contact-item span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 /* Footer */
 footer {
   background: var(--primary-color);
@@ -427,5 +480,18 @@ footer p {
 
   .steps {
     grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 2rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-item {
+    min-width: 100%;
   }
 }
