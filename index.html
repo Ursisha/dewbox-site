@@ -31,7 +31,11 @@
 
     <!-- Preload critical assets -->
     <link rel="preload" as="image" href="assets/hero-poster.webp" />
-    <link rel="preload" as="image" href="assets/branding/logo_horizontal.webp" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/branding/logo_horizontal.webp"
+    />
     <link rel="preload" as="image" href="assets/branding/logo_small.webp" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,12 +61,37 @@
             class="logo-img logo-mobile"
           />
         </a>
+        <button
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-links">
-          <li><a href="#about" class="nav-link-bg">За DewBox</a></li>
-          <li><a href="#how" class="nav-link-bg">Как работи</a></li>
-          <li><a href="#price" class="nav-link-bg">Цена</a></li>
-          <li><a href="#faq" class="nav-link-bg">FAQ</a></li>
-          <li><a href="#gallery" class="nav-link-bg">Галерия</a></li>
+          <li>
+            <a href="#about" class="nav-link-bg" onclick="closeMenu()"
+              >За DewBox</a
+            >
+          </li>
+          <li>
+            <a href="#how" class="nav-link-bg" onclick="closeMenu()"
+              >Как работи</a
+            >
+          </li>
+          <li>
+            <a href="#price" class="nav-link-bg" onclick="closeMenu()">Цена</a>
+          </li>
+          <li>
+            <a href="#faq" class="nav-link-bg" onclick="closeMenu()">FAQ</a>
+          </li>
+          <li>
+            <a href="#gallery" class="nav-link-bg" onclick="closeMenu()"
+              >Галерия</a
+            >
+          </li>
         </ul>
         <button class="lang-switch" onclick="toggleLanguage()">EN</button>
       </nav>
@@ -196,31 +225,67 @@
         <p class="section-subtitle">Вдъхновение от предишни DewBox кутии</p>
         <div class="gallery">
           <div class="gallery-item">
-            <img src="assets/sample1.webp" alt="DewBox пример 1" loading="lazy" />
+            <img
+              src="assets/sample1.webp"
+              alt="DewBox пример 1"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample2.webp" alt="DewBox пример 2" loading="lazy" />
+            <img
+              src="assets/sample2.webp"
+              alt="DewBox пример 2"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample3.webp" alt="DewBox пример 3" loading="lazy" />
+            <img
+              src="assets/sample3.webp"
+              alt="DewBox пример 3"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample4.webp" alt="DewBox пример 4" loading="lazy" />
+            <img
+              src="assets/sample4.webp"
+              alt="DewBox пример 4"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample5.webp" alt="DewBox пример 5" loading="lazy" />
+            <img
+              src="assets/sample5.webp"
+              alt="DewBox пример 5"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample6.webp" alt="DewBox пример 6" loading="lazy" />
+            <img
+              src="assets/sample6.webp"
+              alt="DewBox пример 6"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample7.webp" alt="DewBox пример 7" loading="lazy" />
+            <img
+              src="assets/sample7.webp"
+              alt="DewBox пример 7"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample8.webp" alt="DewBox пример 8" loading="lazy" />
+            <img
+              src="assets/sample8.webp"
+              alt="DewBox пример 8"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample9.webp" alt="DewBox пример 9" loading="lazy" />
+            <img
+              src="assets/sample9.webp"
+              alt="DewBox пример 9"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
@@ -419,35 +484,71 @@
         </p>
         <div class="gallery">
           <div class="gallery-item">
-            <img src="assets/sample1.webp" alt="DewBox example 1" loading="lazy" />
+            <img
+              src="assets/sample1.webp"
+              alt="DewBox example 1"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample2.webp" alt="DewBox example 2" loading="lazy" />
+            <img
+              src="assets/sample2.webp"
+              alt="DewBox example 2"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample3.webp" alt="DewBox example 3" loading="lazy" />
+            <img
+              src="assets/sample3.webp"
+              alt="DewBox example 3"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample4.webp" alt="DewBox example 4" loading="lazy" />
+            <img
+              src="assets/sample4.webp"
+              alt="DewBox example 4"
+              loading="lazy"
+            />
           </div>
           <div class="gallery-item">
-            <img src="assets/sample5.webp" alt="DewBox example 5" loading="lazy" />
+            <img
+              src="assets/sample5.webp"
+              alt="DewBox example 5"
+              loading="lazy"
+            />
             <div class="gallery-item-caption">DewBox example 5</div>
           </div>
           <div class="gallery-item">
-            <img src="assets/sample6.webp" alt="DewBox example 6" loading="lazy" />
+            <img
+              src="assets/sample6.webp"
+              alt="DewBox example 6"
+              loading="lazy"
+            />
             <div class="gallery-item-caption">DewBox example 6</div>
           </div>
           <div class="gallery-item">
-            <img src="assets/sample7.webp" alt="DewBox example 7" loading="lazy" />
+            <img
+              src="assets/sample7.webp"
+              alt="DewBox example 7"
+              loading="lazy"
+            />
             <div class="gallery-item-caption">DewBox example 7</div>
           </div>
           <div class="gallery-item">
-            <img src="assets/sample8.webp" alt="DewBox example 8" loading="lazy" />
+            <img
+              src="assets/sample8.webp"
+              alt="DewBox example 8"
+              loading="lazy"
+            />
             <div class="gallery-item-caption">DewBox example 8</div>
           </div>
           <div class="gallery-item">
-            <img src="assets/sample9.webp" alt="DewBox example 9" loading="lazy" />
+            <img
+              src="assets/sample9.webp"
+              alt="DewBox example 9"
+              loading="lazy"
+            />
             <div class="gallery-item-caption">DewBox example 9</div>
           </div>
         </div>
@@ -540,6 +641,25 @@
 
     <script>
       let currentLang = "bg";
+
+      // Mobile menu toggle
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        const menuToggle = document.querySelector(".menu-toggle");
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+        document.body.style.overflow = navLinks.classList.contains("active")
+          ? "hidden"
+          : "auto";
+      }
+
+      function closeMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        const menuToggle = document.querySelector(".menu-toggle");
+        navLinks.classList.remove("active");
+        menuToggle.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
 
       function toggleLanguage() {
         const bgContent = document.getElementById("bg-content");
