@@ -1,0 +1,7 @@
+# Redirect from root domain to subdomain
+https://ursisha.com/* https://dewbox.ursisha.com/:splat 301!
+http://ursisha.com/* https://dewbox.ursisha.com/:splat 301!
+
+# Also handle www subdomain if needed
+https://www.ursisha.com/* https://dewbox.ursisha.com/:splat 301!
+http://www.ursisha.com/* https://dewbox.ursisha.com/:splat 301!
