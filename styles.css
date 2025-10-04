@@ -68,6 +68,10 @@ nav {
   transition: transform 0.3s;
 }
 
+.logo-mobile {
+  display: none;
+}
+
 .logo:hover .logo-img {
   transform: scale(1.05);
 }
@@ -369,6 +373,38 @@ footer p {
 
 /* Responsive */
 @media (max-width: 768px) {
+  /* Logo switch for mobile */
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+
+  .logo-img {
+    height: 45px;
+  }
+
+  /* Compact navigation */
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .lang-switch {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -379,10 +415,6 @@ footer p {
 
   .section-title {
     font-size: 2rem;
-  }
-
-  .nav-links {
-    gap: 1rem;
   }
 
   section {
