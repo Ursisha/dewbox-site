@@ -171,7 +171,10 @@
         </div>
         <div class="faq-item">
           <h3>Какви са вариантите за доставка?</h3>
-          <p>До автомати на BoxNow и Спиди – безплатно (включено в цената).</p>
+          <p>
+            До автомати на BoxNow и Спиди – безплатно (включено в цената).
+            Възможно е и лично предаване в рамките на град София.
+          </p>
         </div>
         <div class="faq-item">
           <h3>Как мога да заплатя кутията?</h3>
@@ -484,6 +487,15 @@
       </p>
     </footer>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+      <button class="lightbox-prev">&#10094;</button>
+      <button class="lightbox-next">&#10095;</button>
+    </div>
+
     <script>
       let currentLang = "bg";
 
@@ -541,6 +553,87 @@
             });
           }
         });
+      });
+
+      // Lightbox functionality
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxCaption = document.getElementById("lightbox-caption");
+      const closeBtn = document.querySelector(".lightbox-close");
+      const prevBtn = document.querySelector(".lightbox-prev");
+      const nextBtn = document.querySelector(".lightbox-next");
+
+      let currentImageIndex = 0;
+      let galleryImages = [];
+
+      // Initialize gallery images
+      function updateGalleryImages() {
+        const activeContent = document.querySelector(".lang-content.active");
+        galleryImages = Array.from(
+          activeContent.querySelectorAll(".gallery-item img")
+        );
+      }
+
+      // Open lightbox
+      function openLightbox(index) {
+        updateGalleryImages();
+        currentImageIndex = index;
+        lightboxImg.src = galleryImages[currentImageIndex].src;
+        lightboxCaption.textContent = galleryImages[currentImageIndex].alt;
+        lightbox.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      // Close lightbox
+      function closeLightbox() {
+        lightbox.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // Navigate images
+      function changeImage(direction) {
+        currentImageIndex += direction;
+        if (currentImageIndex >= galleryImages.length) {
+          currentImageIndex = 0;
+        } else if (currentImageIndex < 0) {
+          currentImageIndex = galleryImages.length - 1;
+        }
+        lightboxImg.src = galleryImages[currentImageIndex].src;
+        lightboxCaption.textContent = galleryImages[currentImageIndex].alt;
+      }
+
+      // Event listeners for gallery items
+      document.addEventListener("click", function (e) {
+        if (e.target.closest(".gallery-item img")) {
+          const activeContent = document.querySelector(".lang-content.active");
+          const clickedImg = e.target;
+          const images = Array.from(
+            activeContent.querySelectorAll(".gallery-item img")
+          );
+          const index = images.indexOf(clickedImg);
+          openLightbox(index);
+        }
+      });
+
+      // Close lightbox events
+      closeBtn.addEventListener("click", closeLightbox);
+      lightbox.addEventListener("click", function (e) {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      // Navigation buttons
+      prevBtn.addEventListener("click", () => changeImage(-1));
+      nextBtn.addEventListener("click", () => changeImage(1));
+
+      // Keyboard navigation
+      document.addEventListener("keydown", function (e) {
+        if (lightbox.style.display === "flex") {
+          if (e.key === "Escape") closeLightbox();
+          if (e.key === "ArrowLeft") changeImage(-1);
+          if (e.key === "ArrowRight") changeImage(1);
+        }
       });
     </script>
   </body>
