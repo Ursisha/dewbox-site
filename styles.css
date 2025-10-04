@@ -598,7 +598,7 @@ footer p {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* Logo switch for mobile */
   .logo-desktop {
     display: none;
@@ -668,6 +668,9 @@ footer p {
   }
   .nav-links.active li:nth-child(5) {
     transition-delay: 0.5s;
+  }
+  .nav-links.active li:nth-child(6) {
+    transition-delay: 0.6s;
   }
 
   .nav-links a {

@@ -92,6 +92,11 @@
               >Галерия</a
             >
           </li>
+          <li>
+            <a href="#contact" class="nav-link-bg" onclick="closeMenu()"
+              >Контакти</a
+            >
+          </li>
         </ul>
         <button class="lang-switch" onclick="toggleLanguage()">EN</button>
       </nav>
@@ -679,6 +684,7 @@
           navLinks[2].textContent = "Price";
           navLinks[3].textContent = "FAQ";
           navLinks[4].textContent = "Gallery";
+          navLinks[5].textContent = "Contact";
         } else {
           enContent.classList.remove("active");
           bgContent.classList.add("active");
@@ -691,6 +697,7 @@
           navLinks[2].textContent = "Цена";
           navLinks[3].textContent = "FAQ";
           navLinks[4].textContent = "Галерия";
+          navLinks[5].textContent = "Контакти";
         }
       }
 
