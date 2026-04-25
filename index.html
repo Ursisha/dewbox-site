@@ -29,21 +29,14 @@
     />
     <link rel="icon" type="image/png" href="/assets/icons/favicon.png" />
 
-    <!-- Preload critical assets -->
-    <link rel="preload" as="image" href="/assets/hero-poster.webp" />
+    <!-- Preload LCP image -->
     <link
       rel="preload"
       as="image"
-      href="/assets/branding/logo_horizontal.webp"
+      href="/assets/hero-poster.webp"
+      fetchpriority="high"
     />
-    <link rel="preload" as="image" href="/assets/branding/logo_small.webp" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/styles.css" />
 
     <!-- Canonical + theme -->
@@ -75,8 +68,8 @@
       property="og:image"
       content="https://dewbox.ursisha.com/assets/hero-poster.webp"
     />
-    <meta property="og:image:width" content="1341" />
-    <meta property="og:image:height" content="2380" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="1420" />
     <meta property="og:locale" content="bg_BG" />
     <meta property="og:locale:alternate" content="en_US" />
 
@@ -144,11 +137,15 @@
             src="/assets/branding/logo_horizontal.webp"
             alt="Ursisha Logo"
             class="logo-img logo-desktop"
+            width="900"
+            height="400"
           />
           <img
             src="/assets/branding/logo_small.webp"
             alt="Ursisha Logo"
             class="logo-img logo-mobile"
+            width="400"
+            height="418"
           />
         </a>
         <button
@@ -181,6 +178,8 @@
         playsinline
         preload="none"
         poster="/assets/hero-poster.webp"
+        width="1280"
+        height="720"
       >
         <source src="/assets/dewbox-hero.mp4" type="video/mp4" />
       </video>
@@ -293,31 +292,85 @@
       <p class="section-subtitle">Вдъхновение от предишни DewBox кутии</p>
       <div class="gallery">
         <div class="gallery-item">
-          <img src="/assets/sample1.webp" alt="DewBox пример 1" loading="lazy" />
+          <img
+            src="/assets/sample1.webp"
+            alt="DewBox пример 1"
+            loading="lazy"
+            width="1000"
+            height="1777"
+          />
         </div>
         <div class="gallery-item">
-          <img src="/assets/sample2.webp" alt="DewBox пример 2" loading="lazy" />
+          <img
+            src="/assets/sample2.webp"
+            alt="DewBox пример 2"
+            loading="lazy"
+            width="959"
+            height="1705"
+          />
         </div>
         <div class="gallery-item">
-          <img src="/assets/sample3.webp" alt="DewBox пример 3" loading="lazy" />
+          <img
+            src="/assets/sample3.webp"
+            alt="DewBox пример 3"
+            loading="lazy"
+            width="1067"
+            height="1640"
+          />
         </div>
         <div class="gallery-item">
-          <img src="/assets/sample4.webp" alt="DewBox пример 4" loading="lazy" />
+          <img
+            src="/assets/sample4.webp"
+            alt="DewBox пример 4"
+            loading="lazy"
+            width="1080"
+            height="1440"
+          />
         </div>
         <div class="gallery-item">
-          <img src="/assets/sample5.webp" alt="DewBox пример 5" loading="lazy" />
+          <img
+            src="/assets/sample5.webp"
+            alt="DewBox пример 5"
+            loading="lazy"
+            width="1000"
+            height="1333"
+          />
         </div>
         <div class="gallery-item">
-          <img src="/assets/sample6.webp" alt="DewBox пример 6" loading="lazy" />
+          <img
+            src="/assets/sample6.webp"
+            alt="DewBox пример 6"
+            loading="lazy"
+            width="1000"
+            height="1333"
+          />
         </div>
         <div class="gallery-item">
-          <img src="/assets/sample7.webp" alt="DewBox пример 7" loading="lazy" />
+          <img
+            src="/assets/sample7.webp"
+            alt="DewBox пример 7"
+            loading="lazy"
+            width="1000"
+            height="1250"
+          />
         </div>
         <div class="gallery-item">
-          <img src="/assets/sample8.webp" alt="DewBox пример 8" loading="lazy" />
+          <img
+            src="/assets/sample8.webp"
+            alt="DewBox пример 8"
+            loading="lazy"
+            width="1000"
+            height="1777"
+          />
         </div>
         <div class="gallery-item">
-          <img src="/assets/sample9.webp" alt="DewBox пример 9" loading="lazy" />
+          <img
+            src="/assets/sample9.webp"
+            alt="DewBox пример 9"
+            loading="lazy"
+            width="1000"
+            height="1775"
+          />
         </div>
       </div>
     </section>
