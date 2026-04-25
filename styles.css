@@ -102,6 +102,8 @@ nav {
   cursor: pointer;
   color: var(--text-dark);
   font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
   transition: all 0.3s;
 }
 
