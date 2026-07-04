@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DewBox by Ursisha — Personalized Mystery Boxes</title>
+    <title>Ursisha — Handmade Jewelry, Scented Candles & Gifts</title>
     <meta
       name="description"
-      content="DewBox is a personalized mystery box, created just for you by Ursisha."
+      content="Ursisha — handmade emotions. Handmade jewelry from silver and natural stones, scented candles and wax melts from natural wax, and personalized DewBox gift boxes."
     />
 
     <!-- Favicons -->
@@ -33,56 +33,52 @@
     <link
       rel="preload"
       as="image"
-      href="/assets/hero-poster.webp"
+      href="/assets/home/home-hero.webp"
       fetchpriority="high"
     />
 
     <link rel="stylesheet" href="/styles.css" />
 
     <!-- Canonical + theme -->
-    <link rel="canonical" href="https://dewbox.ursisha.com/en/" />
+    <link rel="canonical" href="https://ursisha.com/en/" />
     <meta name="theme-color" content="#2c1810" />
 
     <!-- hreflang -->
-    <link rel="alternate" hreflang="bg" href="https://dewbox.ursisha.com/" />
-    <link rel="alternate" hreflang="en" href="https://dewbox.ursisha.com/en/" />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://dewbox.ursisha.com/"
-    />
+    <link rel="alternate" hreflang="bg" href="https://ursisha.com/" />
+    <link rel="alternate" hreflang="en" href="https://ursisha.com/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://ursisha.com/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="DewBox by Ursisha" />
+    <meta property="og:site_name" content="Ursisha" />
     <meta
       property="og:title"
-      content="DewBox by Ursisha — Personalized Mystery Boxes"
+      content="Ursisha — Handmade Jewelry, Scented Candles & Gifts"
     />
     <meta
       property="og:description"
-      content="DewBox is a personalized mystery box, created just for you by Ursisha."
+      content="Handmade emotions. Jewelry from silver and natural stones, scented candles, and personalized DewBox gift boxes — handmade in Bulgaria."
     />
-    <meta property="og:url" content="https://dewbox.ursisha.com/en/" />
+    <meta property="og:url" content="https://ursisha.com/en/" />
     <meta
       property="og:image"
-      content="https://dewbox.ursisha.com/assets/hero-poster.webp"
+      content="https://ursisha.com/assets/home/home-hero.webp"
     />
-    <meta property="og:image:width" content="800" />
-    <meta property="og:image:height" content="1420" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="1600" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="bg_BG" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DewBox by Ursisha" />
+    <meta name="twitter:title" content="Ursisha — handmade emotions" />
     <meta
       name="twitter:description"
-      content="A personalized mystery box, created just for you."
+      content="Handmade jewelry, scented candles, and personalized gifts."
     />
     <meta
       name="twitter:image"
-      content="https://dewbox.ursisha.com/assets/hero-poster.webp"
+      content="https://ursisha.com/assets/home/home-hero.webp"
     />
 
     <!-- Structured data -->
@@ -91,39 +87,24 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "Product",
-            "name": "DewBox by Ursisha",
-            "description": "A personalized mystery box — each one unique, created based on your taste, style, and preferences.",
-            "image": "https://dewbox.ursisha.com/assets/hero-poster.webp",
-            "url": "https://dewbox.ursisha.com/en/",
-            "brand": { "@type": "Brand", "name": "Ursisha" },
-            "offers": [
-              {
-                "@type": "Offer",
-                "price": "69",
-                "priceCurrency": "BGN",
-                "availability": "https://schema.org/InStock",
-                "url": "https://dewbox.ursisha.com/en/#price"
-              },
-              {
-                "@type": "Offer",
-                "price": "35",
-                "priceCurrency": "EUR",
-                "availability": "https://schema.org/InStock",
-                "url": "https://dewbox.ursisha.com/en/#price"
-              }
-            ]
-          },
-          {
             "@type": "Organization",
+            "@id": "https://ursisha.com/#organization",
             "name": "Ursisha",
-            "url": "https://dewbox.ursisha.com/",
-            "logo": "https://dewbox.ursisha.com/assets/branding/logo_horizontal.webp",
+            "url": "https://ursisha.com/",
+            "logo": "https://ursisha.com/assets/branding/logo_horizontal.webp",
             "telephone": "+359888829538",
+            "slogan": "Handmade emotions",
             "sameAs": [
               "https://instagram.com/ursisha_",
               "https://facebook.com/ursisha"
             ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Ursisha",
+            "url": "https://ursisha.com/",
+            "inLanguage": ["bg", "en"],
+            "publisher": { "@id": "https://ursisha.com/#organization" }
           }
         ]
       }
@@ -158,11 +139,10 @@
           <span></span>
         </button>
         <ul class="nav-links">
-          <li><a href="#about" onclick="closeMenu()">About DewBox</a></li>
-          <li><a href="#how" onclick="closeMenu()">How it's made</a></li>
-          <li><a href="#price" onclick="closeMenu()">Price</a></li>
-          <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
-          <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+          <li><a href="/en/" onclick="closeMenu()" aria-current="page">Home</a></li>
+          <li><a href="/en/jewelry/" onclick="closeMenu()">Jewelry</a></li>
+          <li><a href="/en/candles/" onclick="closeMenu()">Candles</a></li>
+          <li><a href="/en/dewbox/" onclick="closeMenu()">DewBox</a></li>
           <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
         </ul>
         <a class="lang-switch" href="/" hreflang="bg">BG</a>
@@ -170,202 +150,93 @@
     </header>
 
     <section class="hero">
-      <video
-        class="hero-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="none"
-        poster="/assets/hero-poster.webp"
+      <img
+        class="hero-img"
+        src="/assets/home/home-hero.webp"
+        alt="Handmade Ursisha jewelry in a velvet gift box"
         width="1280"
-        height="720"
-      >
-        <source src="/assets/dewbox-hero.mp4" type="video/mp4" />
-      </video>
+        height="1600"
+        fetchpriority="high"
+      />
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1>DewBox by Ursisha</h1>
+        <h1>Ursisha</h1>
         <p class="hero-subtitle">
-          A personalized mystery box – created just for you
+          Handmade emotions — jewelry, scents, and gifts, created with love
         </p>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSe4RmO6APw6d88s1cgk26RI1ptLKJVvBPgyv-P5FHh6_43rCA/viewform"
-          target="_blank"
-          class="cta-button"
-          >Fill the Questionnaire</a
-        >
+        <a href="#collections" class="cta-button">Explore the Collections</a>
       </div>
     </section>
 
-    <section id="about" class="about">
-      <h2 class="section-title">🌌 What is DewBox?</h2>
-      <p>
-        DewBox is a personalized mystery box – each one unique, created based on
-        your taste, style, and preferences. Every box is a one-of-a-kind
-        surprise, carefully crafted for you by Ursisha.
-      </p>
-    </section>
-
-    <section id="how">
-      <h2 class="section-title">🪄 How it's made?</h2>
-      <p class="section-subtitle">
-        Three simple steps to your personalized surprise
-      </p>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>Fill the Questionnaire</h3>
-          <p>
-            Share your preferences, style, and interests through a short
-            questionnaire
-          </p>
-        </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>Creation & Selection</h3>
-          <p>
-            Ursisha carefully creates and selects the perfect surprises tailored
-            for you
-          </p>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Receive Your Box</h3>
-          <p>You receive a unique surprise box made just for you</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="price">
-      <div class="price-box">
-        <h2>💝 Price</h2>
-        <div class="price-amount">69 BGN / 35 €</div>
-        <p class="price-description">
-          Delivery to BoxNow lockers is included in the price
-        </p>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSe4RmO6APw6d88s1cgk26RI1ptLKJVvBPgyv-P5FHh6_43rCA/viewform"
-          target="_blank"
-          class="cta-button"
-          style="background: white; color: var(--primary-color); margin-top: 2rem"
-          >Order Now</a
-        >
-      </div>
-    </section>
-
-    <section id="faq">
-      <h2 class="section-title">❓ FAQ</h2>
-      <div class="faq-item">
-        <h3>How long does it take to prepare my box?</h3>
+    <section id="about" class="story">
+      <img
+        src="/assets/home/workshop.webp"
+        alt="Handcrafting silver jewelry in the Ursisha workshop"
+        loading="lazy"
+        width="810"
+        height="1080"
+      />
+      <div>
+        <h2>About Ursisha</h2>
         <p>
-          Usually 3–7 days, depending on material availability and
-          personalization.
+          Ursisha was born from a love of beautiful little things — and the
+          belief that a gift is an emotion.
         </p>
-      </div>
-      <div class="faq-item">
-        <h3>Can I order it as a gift?</h3>
-        <p>Yes, of course! There's an option to order a gift voucher.</p>
-      </div>
-      <div class="faq-item">
-        <h3>What delivery options are available?</h3>
         <p>
-          To BoxNow and Speedy lockers – free of charge (included in the price).
+          In our workshop we handcraft jewelry from silver, gold,
+          natural stones and pearls, scented candles and wax melts from
+          natural wax, and personalized surprise boxes — DewBox.
         </p>
-      </div>
-      <div class="faq-item">
-        <h3>How can I pay for the box?</h3>
         <p>
-          Preparation begins only after prepayment via bank transfer or Revolut.
+          Everything that leaves our hands carries a piece of care — for you,
+          or for someone you love.
         </p>
       </div>
     </section>
 
-    <section id="gallery">
-      <h2 class="section-title">📷 Gallery</h2>
-      <p class="section-subtitle">Inspiration from previous DewBox creations</p>
-      <div class="gallery">
-        <div class="gallery-item">
+    <section id="collections">
+      <h2 class="section-title">✨ Our Collections</h2>
+      <p class="section-subtitle">Handmade, with attention to every detail</p>
+      <div class="collections-grid">
+        <a href="/en/jewelry/" class="collection-card">
           <img
-            src="/assets/sample1.webp"
-            alt="DewBox example 1"
+            src="/assets/jewelry/jewelry-1.webp"
+            alt="Natural pearl bracelet — handmade Ursisha jewelry"
             loading="lazy"
-            width="1000"
-            height="1777"
+            width="864"
+            height="1080"
           />
-        </div>
-        <div class="gallery-item">
+          <div class="collection-card-label">
+            <h3>💠 Jewelry</h3>
+            <p>Silver, gold, stones and pearls — soon to be your favorites</p>
+          </div>
+        </a>
+        <a href="/en/candles/" class="collection-card">
           <img
-            src="/assets/sample2.webp"
-            alt="DewBox example 2"
-            loading="lazy"
-            width="959"
-            height="1705"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="/assets/sample3.webp"
-            alt="DewBox example 3"
-            loading="lazy"
-            width="1067"
-            height="1640"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="/assets/sample4.webp"
-            alt="DewBox example 4"
+            src="/assets/candles/candles-hero.webp"
+            alt="EMBER scented wax melts with a ceramic aroma burner"
             loading="lazy"
             width="1080"
-            height="1440"
+            height="1350"
           />
-        </div>
-        <div class="gallery-item">
+          <div class="collection-card-label">
+            <h3>🕯️ Scented Candles</h3>
+            <p>Candles and wax melts from natural wax — a touch of magic in the air</p>
+          </div>
+        </a>
+        <a href="/en/dewbox/" class="collection-card">
           <img
-            src="/assets/sample5.webp"
-            alt="DewBox example 5"
+            src="/assets/hero-poster.webp"
+            alt="DewBox — a personalized box of gifts"
             loading="lazy"
-            width="1000"
-            height="1333"
+            width="800"
+            height="1420"
           />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="/assets/sample6.webp"
-            alt="DewBox example 6"
-            loading="lazy"
-            width="1000"
-            height="1333"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="/assets/sample7.webp"
-            alt="DewBox example 7"
-            loading="lazy"
-            width="1000"
-            height="1250"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="/assets/sample8.webp"
-            alt="DewBox example 8"
-            loading="lazy"
-            width="1000"
-            height="1777"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="/assets/sample9.webp"
-            alt="DewBox example 9"
-            loading="lazy"
-            width="1000"
-            height="1775"
-          />
-        </div>
+          <div class="collection-card-label">
+            <h3>💝 DewBox</h3>
+            <p>A box of gifts, created just for you</p>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -440,18 +311,9 @@
     <footer>
       <p>&copy; 2025 Ursisha. All rights reserved.</p>
       <p style="margin-top: 0.5rem; opacity: 0.7">
-        Made with ❤️ for personalized surprises
+        Handmade emotions ❤️
       </p>
     </footer>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-      <span class="lightbox-close">&times;</span>
-      <img class="lightbox-content" id="lightbox-img" />
-      <div class="lightbox-caption" id="lightbox-caption"></div>
-      <button class="lightbox-prev">&#10094;</button>
-      <button class="lightbox-next">&#10095;</button>
-    </div>
 
     <script>
       // Mobile menu toggle
@@ -487,61 +349,6 @@
             });
           }
         });
-      });
-
-      // Lightbox
-      const lightbox = document.getElementById("lightbox");
-      const lightboxImg = document.getElementById("lightbox-img");
-      const lightboxCaption = document.getElementById("lightbox-caption");
-      const closeBtn = document.querySelector(".lightbox-close");
-      const prevBtn = document.querySelector(".lightbox-prev");
-      const nextBtn = document.querySelector(".lightbox-next");
-      const galleryImages = Array.from(
-        document.querySelectorAll(".gallery-item img")
-      );
-      let currentImageIndex = 0;
-
-      function showImage(index) {
-        currentImageIndex = index;
-        lightboxImg.src = galleryImages[index].src;
-        lightboxCaption.textContent = galleryImages[index].alt;
-      }
-
-      function openLightbox(index) {
-        showImage(index);
-        lightbox.style.display = "flex";
-        document.body.style.overflow = "hidden";
-      }
-
-      function closeLightbox() {
-        lightbox.style.display = "none";
-        document.body.style.overflow = "auto";
-      }
-
-      function changeImage(direction) {
-        const next =
-          (currentImageIndex + direction + galleryImages.length) %
-          galleryImages.length;
-        showImage(next);
-      }
-
-      document.addEventListener("click", function (e) {
-        const img = e.target.closest(".gallery-item img");
-        if (img) openLightbox(galleryImages.indexOf(img));
-      });
-
-      closeBtn.addEventListener("click", closeLightbox);
-      lightbox.addEventListener("click", function (e) {
-        if (e.target === lightbox) closeLightbox();
-      });
-      prevBtn.addEventListener("click", () => changeImage(-1));
-      nextBtn.addEventListener("click", () => changeImage(1));
-
-      document.addEventListener("keydown", function (e) {
-        if (lightbox.style.display !== "flex") return;
-        if (e.key === "Escape") closeLightbox();
-        if (e.key === "ArrowLeft") changeImage(-1);
-        if (e.key === "ArrowRight") changeImage(1);
       });
     </script>
   </body>
