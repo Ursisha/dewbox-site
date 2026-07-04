@@ -4,21 +4,75 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
   <url>
-    <loc>https://dewbox.ursisha.com/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <loc>https://ursisha.com/</loc>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="bg" href="https://dewbox.ursisha.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://dewbox.ursisha.com/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dewbox.ursisha.com/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://ursisha.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ursisha.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ursisha.com/" />
   </url>
   <url>
-    <loc>https://dewbox.ursisha.com/en/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <loc>https://ursisha.com/en/</loc>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="bg" href="https://dewbox.ursisha.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://dewbox.ursisha.com/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dewbox.ursisha.com/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://ursisha.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ursisha.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ursisha.com/" />
+  </url>
+  <url>
+    <loc>https://ursisha.com/jewelry/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://ursisha.com/jewelry/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ursisha.com/en/jewelry/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ursisha.com/jewelry/" />
+  </url>
+  <url>
+    <loc>https://ursisha.com/en/jewelry/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://ursisha.com/jewelry/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ursisha.com/en/jewelry/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ursisha.com/jewelry/" />
+  </url>
+  <url>
+    <loc>https://ursisha.com/candles/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://ursisha.com/candles/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ursisha.com/en/candles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ursisha.com/candles/" />
+  </url>
+  <url>
+    <loc>https://ursisha.com/en/candles/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://ursisha.com/candles/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ursisha.com/en/candles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ursisha.com/candles/" />
+  </url>
+  <url>
+    <loc>https://ursisha.com/dewbox/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://ursisha.com/dewbox/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ursisha.com/en/dewbox/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ursisha.com/dewbox/" />
+  </url>
+  <url>
+    <loc>https://ursisha.com/en/dewbox/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://ursisha.com/dewbox/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ursisha.com/en/dewbox/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ursisha.com/dewbox/" />
   </url>
 </urlset>

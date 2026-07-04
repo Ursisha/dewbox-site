@@ -1,7 +1,19 @@
-# Redirect from root domain to subdomain
-https://ursisha.com/* https://dewbox.ursisha.com/:splat 301!
-http://ursisha.com/* https://dewbox.ursisha.com/:splat 301!
+# Shared resources live at the site root, not under /dewbox/ —
+# these rules must come before the page catch-alls below.
+https://dewbox.ursisha.com/assets/* https://ursisha.com/assets/:splat 301!
+http://dewbox.ursisha.com/assets/* https://ursisha.com/assets/:splat 301!
+https://dewbox.ursisha.com/styles.css https://ursisha.com/styles.css 301!
+https://dewbox.ursisha.com/sitemap.xml https://ursisha.com/sitemap.xml 301!
+https://dewbox.ursisha.com/robots.txt https://ursisha.com/robots.txt 301!
 
-# Also handle www subdomain if needed
-https://www.ursisha.com/* https://dewbox.ursisha.com/:splat 301!
-http://www.ursisha.com/* https://dewbox.ursisha.com/:splat 301!
+# DewBox moved from its subdomain to ursisha.com/dewbox/.
+# The /en/ rule must come before the catch-all so English URLs
+# map to /en/dewbox/ instead of /dewbox/en/.
+https://dewbox.ursisha.com/en/* https://ursisha.com/en/dewbox/:splat 301!
+https://dewbox.ursisha.com/* https://ursisha.com/dewbox/:splat 301!
+http://dewbox.ursisha.com/en/* https://ursisha.com/en/dewbox/:splat 301!
+http://dewbox.ursisha.com/* https://ursisha.com/dewbox/:splat 301!
+
+# Normalize www to the apex domain
+https://www.ursisha.com/* https://ursisha.com/:splat 301!
+http://www.ursisha.com/* https://ursisha.com/:splat 301!

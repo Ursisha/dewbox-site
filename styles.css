@@ -356,6 +356,109 @@ nav {
   box-shadow: 0 8px 30px rgba(212, 175, 55, 0.6);
 }
 
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-short {
+  height: 65vh;
+  min-height: 420px;
+}
+
+/* Collection Cards (home) */
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.collection-card {
+  position: relative;
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.collection-card:hover {
+  transform: translateY(-10px);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.collection-card:hover img {
+  transform: scale(1.05);
+}
+
+.collection-card-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 3rem 1.5rem 1.5rem;
+  background: linear-gradient(transparent, rgba(44, 24, 16, 0.88));
+  color: white;
+}
+
+.collection-card-label h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.collection-card-label p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Story (about) section with image */
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 4rem;
+  margin: 3rem auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.story img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+.story h2 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.story p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
 /* Section Styling */
 section {
   max-width: 1200px;
@@ -846,6 +949,16 @@ footer p {
 
   .contact {
     padding: 2rem;
+  }
+
+  .story {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .collection-card img {
+    height: 320px;
   }
 
   .contact-info {
