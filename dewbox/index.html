@@ -114,22 +114,45 @@
             "image": "https://ursisha.com/assets/hero-poster.webp",
             "url": "https://ursisha.com/dewbox/",
             "brand": { "@type": "Brand", "name": "Ursisha" },
-            "offers": [
-              {
-                "@type": "Offer",
-                "price": "69",
-                "priceCurrency": "BGN",
-                "availability": "https://schema.org/InStock",
-                "url": "https://ursisha.com/dewbox/#price"
+            "offers": {
+              "@type": "Offer",
+              "price": "35",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock",
+              "url": "https://ursisha.com/dewbox/#price",
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0",
+                  "currency": "EUR"
+                },
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "BG"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 3,
+                    "maxValue": 7,
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 2,
+                    "unitCode": "DAY"
+                  }
+                }
               },
-              {
-                "@type": "Offer",
-                "price": "35",
-                "priceCurrency": "EUR",
-                "availability": "https://schema.org/InStock",
-                "url": "https://ursisha.com/dewbox/#price"
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "BG",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
               }
-            ]
+            }
           }
         ]
       }
@@ -246,7 +269,7 @@
     <section id="price">
       <div class="price-box">
         <h2>💝 Цена</h2>
-        <div class="price-amount">69 лв / 35 €</div>
+        <div class="price-amount">35 €</div>
         <p class="price-description">
           Доставката до автомати на BoxNow е включена в цената
         </p>
@@ -279,7 +302,7 @@
       <div class="faq-item">
         <h3>Какви са вариантите за доставка?</h3>
         <p>
-          До автомати на BoxNow и Спиди – безплатно (включено в цената).
+          До автомати на BoxNow – безплатно (включено в цената).
           Възможно е и лично предаване в рамките на град София.
         </p>
       </div>
@@ -288,6 +311,13 @@
         <p>
           Изработката започва след предварително заплащане по банков път или
           Revolut.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>Мога ли да върна кутията?</h3>
+        <p>
+          Всяка DewBox кутия се изработва индивидуално, по твоите предпочитания,
+          затова не подлежи на връщане.
         </p>
       </div>
     </section>
