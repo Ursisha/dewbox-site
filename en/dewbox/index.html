@@ -114,22 +114,45 @@
             "image": "https://ursisha.com/assets/hero-poster.webp",
             "url": "https://ursisha.com/en/dewbox/",
             "brand": { "@type": "Brand", "name": "Ursisha" },
-            "offers": [
-              {
-                "@type": "Offer",
-                "price": "69",
-                "priceCurrency": "BGN",
-                "availability": "https://schema.org/InStock",
-                "url": "https://ursisha.com/en/dewbox/#price"
+            "offers": {
+              "@type": "Offer",
+              "price": "35",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock",
+              "url": "https://ursisha.com/en/dewbox/#price",
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0",
+                  "currency": "EUR"
+                },
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "BG"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 3,
+                    "maxValue": 7,
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 2,
+                    "unitCode": "DAY"
+                  }
+                }
               },
-              {
-                "@type": "Offer",
-                "price": "35",
-                "priceCurrency": "EUR",
-                "availability": "https://schema.org/InStock",
-                "url": "https://ursisha.com/en/dewbox/#price"
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "BG",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
               }
-            ]
+            }
           }
         ]
       }
@@ -245,7 +268,7 @@
     <section id="price">
       <div class="price-box">
         <h2>💝 Price</h2>
-        <div class="price-amount">69 BGN / 35 €</div>
+        <div class="price-amount">35 €</div>
         <p class="price-description">
           Delivery to BoxNow lockers is included in the price
         </p>
@@ -275,13 +298,20 @@
       <div class="faq-item">
         <h3>What delivery options are available?</h3>
         <p>
-          To BoxNow and Speedy lockers – free of charge (included in the price).
+          To BoxNow lockers – free of charge (included in the price).
         </p>
       </div>
       <div class="faq-item">
         <h3>How can I pay for the box?</h3>
         <p>
           Preparation begins only after prepayment via bank transfer or Revolut.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I return the box?</h3>
+        <p>
+          Every DewBox is made to order around your preferences, so it cannot
+          be returned.
         </p>
       </div>
     </section>
